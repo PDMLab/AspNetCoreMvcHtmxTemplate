@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - AspNetCoreMvc</title>
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body class="h-full">
+  <header class="bg-white drop-shadow-md">
+    <nav class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
+      <div class="flex items-center justify-between w-full py-6">
+        <div class="flex items-center">
+          <a href="#" class="text-base font-medium text-gray-600 hover:text-gray-400">
+            AspNetCoreMvc
+          </a>
+          <div class="hidden ml-10 space-x-8 lg:block">
+            <a asp-action="Index" asp-controller="Home" class="text-base font-medium text-gray-600 hover:text-gray-400"> Home </a>
+
+            <a asp-action="Privacy" asp-controller="Home" class="text-base font-medium text-gray-600 hover:text-gray-400"> Privacy </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="flex flex-wrap justify-center py-4 space-x-6 lg:hidden">
+
+        <a asp-page="/Index" class="text-base font-medium text-gray-600 hover:text-gray-400"> Home </a>
+
+        <a asp-page="/Privacy" class="text-base font-medium text-gray-600 hover:text-gray-400"> Privacy </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="p-4 m-4">
+    <main role="main" class="pb-3">
+      @RenderBody()
+    </main>
+  </div>
+
+
+  <footer class="bg-white sticky top-[100vh] border-solid border-t border-t-gray-200">
+    <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+
+      <div class="mt-8 md:mt-0 md:order-1">
+        <p class="text-base text-center text-gray-600">&copy; 2022 - AspNetCoreMvc - <a asp-action="Privacy"
+            class="text-blue-500" asp-controller="Home">Privacy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
