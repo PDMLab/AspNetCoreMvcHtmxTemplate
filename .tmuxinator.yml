@@ -27,18 +27,18 @@ windows:
       panes:
         - server:
             - printf '\033]2;%s\033\\' 'app'
-            - cd src/AspNetCoreMvc
+            - cd src/AspNetCoreMvcHtmx
             - kill -9 $(lsof -t -i tcp:5001)
             - kill -9 $(lsof -t -i tcp:5000)
             - dotnet watch run
         - workspace:
             - printf '\033]2;%s\033\\' 'app-workspace'
-            - cd src/AspNetCoreMvc
+            - cd src/AspNetCoreMvcHtmx
             - clear
   - frontend:
       layout: even-vertical
       panes:
         - tailwind:
             - printf '\033]2;%s\033\\' 'vite-build'
-            - cd src/AspNetCoreMvc
+            - cd src/AspNetCoreMvcHtmx
             - npx tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/site.css --watch
