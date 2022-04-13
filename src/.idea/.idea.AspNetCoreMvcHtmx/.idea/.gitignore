@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-/.idea.AspNetCoreMvc.iml
+/.idea.AspNetCoreMvcHtmx.iml
 /projectSettingsUpdater.xml
 /modules.xml
 /contentModel.xml
