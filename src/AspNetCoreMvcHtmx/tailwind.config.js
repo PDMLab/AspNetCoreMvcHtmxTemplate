@@ -1,7 +1,14 @@
 module.exports = {
   content: ["./Views/**/*.{cshtml,js}"],
+  safelist: [
+    'input-validation-error'
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: "class",
+    }),
+  ],
 }

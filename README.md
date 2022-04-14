@@ -4,8 +4,10 @@ This is a GitHub Template for ASP.NET Core MVC using .NET 6.
 
 It contains
 
-* a .NET Solution
-* a ASP.NET Core MVC project
+* a .NET 6 Solution
+* a ASP.NET Core MVC 6 project
+* HTMX
+* HTMX .NET extensions
 * TailwindCSS 3 including hot reload (JIT)
 * tmux/tmuxinator windows / panes for development
 
@@ -46,6 +48,12 @@ yarn start
 Browse https://localhost:5001
 
 ![](assets/screenshot.png)
+
+#### HTMX interaction
+
+HTMX usage is shown on the Registration view, even the password strength indicator is build with pure ASP.NET and HTMX (no additional JavaScript)
+
+![](assets/PasswordStrengthIndicator.gif)
 
 ## Known issues
 
