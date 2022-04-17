@@ -26,6 +26,7 @@ It contains
 yarn install
 cd src/AspNetCoreMvcHtmx
 yarn install
+libman restore
 ```
 
 #### Development
