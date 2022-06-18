@@ -69,11 +69,21 @@ You can use these commands, e.g. `AspNetCoreMvcHtmx`  gets renamed to `MyApp`:
 
 ### Rename all references inside the files
 
-```bash
+#### macOS
+
+```shell
 LC_ALL=C find . -type f -name '*.*' -not \( -path './node_modules/*' -o -path './src/AspNetCoreMvcHtmx/node_modules/*' -o -path './assets' \) -exec sed -i '' 's|AspNetCoreMvcHtmx|MyApp|g' {} \;
 ```
 
+#### Linux
+
+```shell
+LC_ALL=C find . -type f -name '*.*' -not \( -path './node_modules/*' -o -path './src/AspNetCoreMvcHtmx/node_modules/*' -o -path './assets' \) -exec sed -i 's/AspNetCoreMvcHtmx/MyApp/g' {} \;
+```
+
 ### Rename files and folders
+
+#### macOS and Linux
 
 ```bash
 find . -depth -name "*AspNetCoreMvcHtmx*" | \
