@@ -8,8 +8,8 @@
 
     <ItemGroup>
         <PackageReference Include="Easy.Password.Validator" Version="1.1.1" />
-        <PackageReference Include="Htmx" Version="0.0.15" />
-        <PackageReference Include="Htmx.TagHelpers" Version="0.0.18" />
+        <PackageReference Include="Htmx" Version="1.0.0" />
+        <PackageReference Include="Htmx.TagHelpers" Version="1.0.0" />
         <PackageReference Include="Serilog" Version="2.11.0" />
         <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
         <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
